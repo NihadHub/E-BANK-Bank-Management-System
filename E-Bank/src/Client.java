@@ -1,8 +1,8 @@
 public class Client extends Person{
     private int numeroClient;
 
-    public Client(int identifiant, String nom,int numeroClient) {
-        super(identifiant, nom);
+    public Client( String nom,int numeroClient) {
+        super( nom);
         this.numeroClient=numeroClient;
     }
 

@@ -1,9 +1,10 @@
 public class Person {
+    private static int idCounter = 1;
     private int identifiant;
     private String nom;
 
-    public Person(int identifiant, String nom) {
-        this.identifiant = identifiant;
+    public Person( String nom) {
+        this.identifiant = idCounter ++;
         this.nom = nom;
     }
 

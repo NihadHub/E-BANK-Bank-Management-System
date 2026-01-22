@@ -1,19 +1,24 @@
 public class Account {
-    private String numeroCompte;
+    private static int accountCounter=1;
+    private int numeroCompte;
     private double solde;
     private String typeCompte;
+    private int numeroClient;
+    private String nom;
 
-    public Account(String numeroCompte, double solde, String typeCompte) {
-        this.numeroCompte = numeroCompte;
+    public Account( double solde, String typeCompte,int numeroClient,String nom) {
         this.solde = solde;
         this.typeCompte = typeCompte;
+        this.numeroClient = numeroClient;
+        this.numeroCompte=accountCounter;
+        this.nom=nom;
     }
 
-    public String getNumeroCompte() {
+    public int getNumeroCompte() {
         return numeroCompte;
     }
 
-    public void setNumeroCompte(String numeroCompte) {
+    public void setNumeroCompte(int numeroCompte) {
         this.numeroCompte = numeroCompte;
     }
 
