@@ -6,7 +6,12 @@ public class SavingsAcount extends Account{
         this.taux = taux;
     }
 
+    public double getTaux() {
+        return taux;
+    }
 
-
+    public void setTaux(double taux) {
+        this.taux = taux;
+    }
 }
 

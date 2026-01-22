@@ -10,7 +10,7 @@ public class Account {
         this.solde = solde;
         this.typeCompte = typeCompte;
         this.numeroClient = numeroClient;
-        this.numeroCompte=accountCounter;
+        this.numeroCompte=accountCounter++;
         this.nom=nom;
     }
 
@@ -38,9 +38,27 @@ public class Account {
         this.typeCompte = typeCompte;
     }
 
+    public String getNom() {
+        return nom;
+    }
 
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 
+    public static int getAccountCounter() {
+        return accountCounter;
+    }
 
+    public static void setAccountCounter(int accountCounter) {
+        Account.accountCounter = accountCounter;
+    }
 
+    public int getNumeroClient() {
+        return numeroClient;
+    }
 
+    public void setNumeroClient(int numeroClient) {
+        this.numeroClient = numeroClient;
+    }
 }
