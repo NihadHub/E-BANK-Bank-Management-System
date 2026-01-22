@@ -38,24 +38,9 @@ public class Account {
         this.typeCompte = typeCompte;
     }
 
-    @Override
-    public String toString() {
-        return "Votre solde actuel est: "+this.solde+"DH.";
-    }
 
-    public void deposer(double montant){
-        if (montant>=50){ solde+=montant;
-        }
-        else {
-            System.out.println("Montant invalide!");
-        }
-    }
 
-    public void retirer(double montant){
-        if (solde>=montant){
-            solde-=montant;
-        }else {
-            System.out.println("Solde insuffisant");
-        }
-    }
+
+
+
 }
